@@ -47,6 +47,14 @@
     });
   }
 </script>
+<script>
+  window.onload = function() {
+    const photoCount = 2; // Adjust the total number of photos you have
+    const randomIndex = Math.floor(Math.random() * photoCount) + 1;
+    const imgPath = `img/cool_guy${randomIndex}.jpg`; // Make sure files are named like your-photo1.jpg, your-photo2.jpg, etc.
+    document.getElementById('profile-photo').src = imgPath;
+  };
+</script>
 </HEAD>
 <BODY>
 <div id="maincontainer">
@@ -68,7 +76,7 @@
                 </p>
             </div>
             <div style="flex: 0 0 auto; margin-left: 10px; padding-top: 50px;">
-                <img src="img/cool_guy.jpg" alt="Yuanhe Zhang Photo" style="width: 150px; border-radius: 10px;">
+                <img id="profile-photo" src="" alt="Yuanhe Zhang Photo" style="width: 150px; border-radius: 10px;">
             </div>
         </div>
 
