@@ -59,15 +59,28 @@
 }
 </script>
 
+<style>
+  .bio-container {
+    display: flex;
+    align-items: flex-start; /* Align image and text at the top */
+    gap: 20px; /* Space between text and image */
+  }
+
+  .bio-text {
+    flex: 1; /* Takes remaining space */
+  }
+
+  .bio-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+</style>
+
 </HEAD>
 <BODY>
 <div id="maincontainer" class="center-screen">
-
-  <div id="contentcontainer">
-    <div id="yourname" title="Yuanhe Zhang">
-      Yuanhe Zhang
-    </div>
-
+  <div class="bio-text">
     <p>
       <br/>
       I am a PhD student in Statistics at University of Warwick, supervised by 
@@ -81,6 +94,11 @@
       <br/>
       You can contact me at firstname.lastname@warwick.ac.uk
     </p>
+  </div>
+  <div>
+    <img src="cool_guy.jpg" alt="Profile picture" class="bio-image">
+  </div>
+</div>
 
 
 
