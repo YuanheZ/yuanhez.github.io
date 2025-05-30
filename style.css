@@ -174,3 +174,7 @@ img {
     height: auto;
     border-radius: 8px;
 }
+
+#contentcontainer ul li {
+    font-size: 15px;
+}
