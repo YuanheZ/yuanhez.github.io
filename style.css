@@ -1,0 +1,158 @@
+/* General Reset and Body Styling */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Lato, Geneva, Helvetica, Verdana, "Lucida Grande", Lucida sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Universal Background Color for Containers */
+#maincontainer, #headercontainer, #middlecontainer, #footercontainer, #contentcontainer {
+    background-color: #ffffff;
+}
+
+/* Main Container */
+#maincontainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Container */
+#headercontainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+/* Logo Container */
+#logocontainer {
+    width: 265px;
+    padding: 0.8em 0em 0em 5em;
+    float: left;
+}
+
+/* Banner Container */
+#bannercontainer {
+    width: 100%;
+    height: 108px;
+    float: left;
+}
+
+/* Middle Container */
+#middlecontainer {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/* Content Container */
+#contentcontainer {
+    width: 39%;
+    padding: 0;
+    margin: 2em 0em 0em 0em;
+    float: left;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+/* Footer Container */
+#footercontainer {
+    width: 100%;
+    height: 2em;
+    margin: 2em 0em 0em 2em;
+    padding: 0.5em 0em 0.8em 0em;
+    background-color: #cccccc;
+    clear: both;
+}
+
+/* Anchor Tag Styles */
+a:link, a:visited {
+    color: #000000;
+}
+
+a:hover, a:active {
+    color: #636363;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Image Styling */
+img {
+    border: 0;
+}
+
+/* Additional Styles for Specific Elements */
+#yourname {
+    color: #000000;
+    font-size: 22px;
+    /* padding: 1em 0em 1em 0.9em; */
+    padding: 1em 0em 1em 0em;
+    font-family: Lato, Geneva, Verdana, Helvetica, "Lucida Grande", Lucida sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    /* background: none repeat scroll 0% 0% rgb(234, 236, 234); */
+    border-radius: 10px;
+}
+
+/* Responsive Design Adjustments */
+@media only screen and (max-width: 768px) {
+    #maincontainer, #headercontainer, #middlecontainer, #footercontainer, #bannercontainer {
+        width: 100%;
+    }
+
+    #contentcontainer {
+	width: 80%;
+	font-size: 80%;
+	margin-left: 0%;
+    }
+
+    #logocontainer, #bannercontainer {
+        float: none;
+        width: auto;
+        padding: 0.8em;
+    }
+
+    #footercontainer {
+        padding: 0.5em;
+    }
+}
+
+/* Centering Screen for Flexbox */
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.bibpanel{
+    display: none;
+    font-size: 10px;
+    padding:1em 0em 1em 2em;
+    background-color: rgb(234, 236, 234);
+    border-radius: 10px 10px 10px 10px;    
+}
+
+.container {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+}
+
+.tag {
+    position: absolute; /* Positions the tag absolutely within the container */
+    left: 0; /* Aligns the tag to the far left of the container */
+    transform: translateX(-100%); /* Moves the tag completely to the left of its start position */
+    margin-left: -40px; /* Adds some space between the tag and the content area */
+    padding: 5px 10px; /* Optional: adds padding inside the tag */
+    border-radius: 5px; /* Optional: rounds the corners of the tag */
+}
