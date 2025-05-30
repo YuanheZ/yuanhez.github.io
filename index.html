@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="classical">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<TITLE>Ilja Kuzborskij</TITLE>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRP0YZ98JR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WRP0YZ98JR');
+</script>
+
+<script language="javascript">
+
+
+  function toggle(id) {
+  var ele = document.getElementById(id);
+  var text = document.getElementById("displayText");
+  if(ele.style.display == "block") {
+  ele.style.display = "none";
+  }
+  else {
+  ele.style.display = "block";
+  }
+  }
+
+  function SelectText(element) {
+    var doc = document
+	, text = doc.getElementById(element)
+	, range, selection
+    ;
+    if (doc.body.createTextRange) {
+	range = document.body.createTextRange();
+	range.moveToElementText(text);
+	range.select();
+    } else if (window.getSelection) {
+	selection = window.getSelection();
+	range = document.createRange();
+	range.selectNodeContents(text);
+	selection.removeAllRanges();
+	selection.addRange(range);
+    }
+  }
+
+  function copyBibliography(id) {
+    var content = document.getElementById(id);
+    navigator.clipboard.writeText(content.innerText).then(function() {
+
+    }).catch(function(error) {
+	alert('Error copying text: ' + error);
+    });
+}
+</script>
+
+</HEAD>
+<BODY>
+<div id="maincontainer" class="center-screen">
+
+  <div id="contentcontainer">
+    <div id="yourname" title="Yuanhe Zhang">
+      Yuanhe Zhang
+    </div>
+
+    <p>
+      <br/>
+      I am a PhD student in Statistics at University of Warwick, under the supervison of 
+      <a href="https://www.lfhsgre.org" target="_blank">Dr. Fanghui Liu</a> 
+      and 
+      <a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/leng" target="_blank">Prof. Chenlei Leng</a>.
+      <br/>
+      <br/>
+      I am interested in theory-grounded algorithm design and theoretical analysis of the training dynamics of neural networks.
+      <br/>
+      <br/>
+      You can contact me at firstname.lastname@warwick.ac.uk
+    </p>
+
+
+
+
+
+
+    <h2>Publications</h2>
+
+    <div class="container">
+      <span class="tag"><b>Spotlight</b></span>
+    <p>
+
+      <a href="https://arxiv.org/abs/2502.01235">
+	<b>LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently</b>
+      </a>
+      <br/>
+      Yuanhe Zhang, Fanghui Liu, Yudong Chen
+      <br/>
+      International Conference on Machine Learning (<a href="https://icml.cc/Conferences/2025">ICML</a>), 2025
+      <em>(to appear)</em>.<br/>
+
+      <a href="https://arxiv.org/abs/2502.01235">[PDF]</a>&ensp;
+      <a href="javascript:toggle('zhang2025loraoneonestepgradientsuffice_wrap');">[Bibtex]</a>&ensp;
+      <div id="zhang2025loraoneonestepgradientsuffice_wrap" class="bibpanel">
+	<PRE id="zhang2025loraoneonestepgradientsuffice">
+@misc{zhang2025loraoneonestepgradientsuffice,
+      title={LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently}, 
+      author={Yuanhe Zhang and Fanghui Liu and Yudong Chen},
+      year={2025},
+      eprint={2502.01235},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2502.01235}, 
+}</PRE>
+	<button onclick="copyBibliography('zhang2025loraoneonestepgradientsuffice')">Copy</button>
+      </div>
+
+<p>
+      <a href="https://arxiv.org/abs/2406.12764">
+	<b>Quasi-Bayes meets Vines</b>
+	</a>
+      <br/>
+	    David Huk, Yuanhe Zhang, Ritabrata Dutta, Mark Steel
+      <br/>
+      Advances in Neural Information Processing Systems (<a href="https://neurips.cc/Conferences/2024">NeurIPS</a>), 2024.
+      <br/>
+
+      <a href="https://arxiv.org/abs/2406.12764">[PDF]</a>&ensp;
+      <a href="javascript:toggle('huk2024quasi_wrap');">[Bibtex]</a>&ensp;
+      <div id="huk2024quasi_wrap" class="bibpanel">
+	<PRE id="huk2024quasi">
+@article{huk2024quasi,
+  title={Quasi-Bayes meets Vines},
+  author={Huk, David and Zhang, Yuanhe and Dutta, Ritabrata and Steel, Mark},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={40359--40392},
+  year={2024}
+}</PRE>
+	<button onclick="copyBibliography('huk2024quasi')">Copy</button>
+      </div>
+	  </p>
+      </div>
+
+<br/>
+<br/>
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>PhD in Statistics</strong>, University of Warwick<br/>
+        Supervised by 
+        <a href="https://www.lfhsgre.org" target="_blank">Dr. Fanghui Liu</a> 
+        and 
+        <a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/leng" target="_blank">Prof. Chenlei Leng</a><br/>
+        <em>2024-Current</em>
+      </li>
+      <li>
+        <strong>BSc MMathStat</strong>, University of Warwick<br/>
+        2020-2024
+      </li>
+    </ul>
+  </div>
+
+
+
+</BODY>
+</HTML>
