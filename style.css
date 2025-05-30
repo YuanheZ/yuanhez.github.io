@@ -94,12 +94,10 @@ img {
 #yourname {
     color: #000000;
     font-size: 22px;
-    /* padding: 1em 0em 1em 0.9em; */
     padding: 1em 0em 1em 0em;
     font-family: Lato, Geneva, Verdana, Helvetica, "Lucida Grande", Lucida sans-serif;
     font-style: normal;
     font-weight: bold;
-    /* background: none repeat scroll 0% 0% rgb(234, 236, 234); */
     border-radius: 10px;
 }
 
@@ -135,7 +133,6 @@ img {
     min-height: 100vh;
 }
 
-
 .bibpanel{
     display: none;
     font-size: 10px;
@@ -155,4 +152,25 @@ img {
     margin-left: -40px; /* Adds some space between the tag and the content area */
     padding: 5px 10px; /* Optional: adds padding inside the tag */
     border-radius: 5px; /* Optional: rounds the corners of the tag */
+}
+
+/* Photo and Introduction Layout */
+.intro-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-photo {
+    flex-shrink: 0;
+}
+
+.intro-photo img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
 }
